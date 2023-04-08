@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- html se indenta con 2 espacios -->
+<html lang="es"> 
+  <head>
+    <title>Jugando con HTML</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Ephesis&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h2 id="titulo-principal">AppDeGatos</h2>
+    <main>
+      <p>Hacer clic para ver <a class="sin-subrayar" href="https://es.wikipedia.org/wiki/Felis_silvestris_catus" target="_blank" rel="noopener noreferrer">gatos</a></p>
+      <div id="contenedor-principal">
+        <div class="rectangulo px">200px de Ancho</div>
+        <div class="rectangulo vw">20vw de Ancho</div>
+        <div class="rectangulo em">15em de Ancho</div>
+      </div>
+        <!-- img se cierra automaticamente -->
+        <a href="#"><img id="imagen-gato" src="https://bit.ly/fcc-relaxing-cat" alt="Un gato naranja"></a>
+        <!-- imagen con un enlace, si en href se coloca solo un # se crea un  enlace vacios -->
+      <br>
+      <a href="https://es.wikipedia.org/wiki/Visual_Studio_Code" target="_blank" rel="noopener noreferrer"><img class="img-negro" src="imagenes/negro.jpg" alt="diablos señorita"></a>
+      <br>
+      <!-- indice con enlace a parrafos -->
+      <a href="#definicion">definición</a>
+      <a href="#historia">Historia</a>
+      <a href="#caracteristicas">caracteristicas</a>
+      <!-- break (salto de linea) -->
+      <br>
+      <h3 id="definicion">definicion</h3>
+      <p>Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux, macOS y Web. Incluye soporte para la depuración, control integrado de Git, resaltado de sintaxis, finalización inteligente de código, fragmentos y refactorización de código. También es personalizable, por lo que los usuarios pueden cambiar el tema del editor, los atajos de teclado y las preferencias. Es gratuito y de código abierto,12 aunque la descarga oficial está bajo software privativo e incluye características personalizadas por Microsoft.3</p>
+      <!-- ALT + Z sirve para que el texto se adapte al tamaño del editor, no cambia la página, y se revierte  -->
+      <p>Visual Studio Code se basa en Electron, un framework que se utiliza para implementar Chromium y Node.js como aplicaciones para escritorio, que se ejecuta en el motor de diseño Blink. Aunque utiliza el framework Electron, el software no usa Atom y en su lugar emplea el mismo componente editor (Monaco) utilizado en Visual Studio Team Services (anteriormente llamado Visual Studio Online).</p>
+      <h3 id="historia">Historia</h3>
+      <p>Visual Studio Code fue anunciado el 29 de abril de 2015 por Microsoft en la conferencia Build de 2015. Una versión preliminar se lanzó poco después.</p>
+      <h3 id="caracteristicas">Características</h3>
+      <p>Visual Studio Code es un editor de código fuente construido sobre el framework Electron. Es compatible con varios lenguajes de programación y un conjunto de características que pueden o no estar disponibles para un lenguaje dado, como se muestra en la siguiente tabla. Muchas de las características de Visual Studio Code no están expuestas a través de los menús o la interfaz de usuario. Más bien, se accede a través de la paleta de comandos o a través de archivos .json (por ejemplo, preferencias del usuario). La paleta de comandos es una interfaz de línea de comandos. Sin embargo, desaparece si el usuario hace clic fuera de él o presiona una combinación de teclas en el teclado para interactuar con algo que está fuera de él. Esto también se aplica a los comandos que requieren mucho tiempo. Cuando esto sucede, el comando en progreso se cancela.</p>
+      <!-- horizontal rule, no requiere cierre -->
+      <hr>
+
+      <!-- Elemento div, es una división. Agrupamos contenido en una sección para luego darle un formato -->
+      <!-- <div class="contenedor-listas"> -->
+        <h3>Listas de boludeces</h3>
+        <!-- ul: unorder list    li: list item     -->
+        <p>Lista uno, unorder</p>
+        <ul id="lista-sin-orden">
+          <!-- palabras tachadas -->
+          <li><s>agarrá una pala</s></li>
+          <!-- texto en negrita -->
+          <li><strong>tu hermana en tanga</strong></li>  
+          <!-- texto en cursiva -->
+          <li><em>cabeza de termo</em></li>
+        </ul>
+        <!-- agregar una líena horizontal -->
+        <hr>
+        <p>Lista 2, ordenada ol</p>
+        <ol id="lista-ordenada">
+          <li>Ferrari</li>
+          <li>Lamborgini</li>
+          <li>Porche</li>
+        </ol>
+        <hr>
+        <!-- formularios, atributo action= envía lo que toma del cuadro de texto al archivo "enviar-respuesta"\n
+        que deberia estar alojado en el servidor y maneja la respuesta del usuario -->
+        <form action="/enviar-respuesta">
+          <input type="text" placeholder="Escrbí gato, dale">
+          <button type="submit">Enviar</button>
+          <p>campo obligatorio</p>
+          <input type="text" placeholder="Escribí si o si" required>
+          <button type="submit">Campo obligatorio</button>
+          <br>
+          
+          <!-- "radio" selecionar una opción con un punto \n
+          el atributo "label" hace que podamos selecionar el botón haciendo clic en la frase \n
+          el atributo "for" nos sirve para relacionar la opción con la etiqueta, para despues lograr \n
+          que se pueda marcar solo uno...  para esto creamos un grupo con el atributo "name" -->
+          <p>Elegí, dale:</p>
+          <label for="Elegime ésta">
+            <input id="Elegime ésta" type="radio" name="elegí-dale" checked> Elegime ésta
+          </label>
+          <br>
+          <label for="O ésta">
+            <input id="O ésta" type="radio" name="elegí-dale"> O ésta
+          </label>
+          <br>
+          <label for="hace la fila">
+            <input id="hace la fila" type="radio" name="elegí-dale"> Y si no, hacé la fila
+          </label>
+
+          <!-- casillas de verificacion -->
+          <p>Sos...</p>
+          <!-- vamos a dejar uno por defecto con "checked" -->
+          <!-- El atributo value sirve para enviar la información seleccionada -->
+          <label for="Pelotudo">
+            <input id="Pelotudo" type="checkbox" value="Pelotudo" name="ahi_lo_tenes" checked> Pelotudo
+          </label>
+          <label for="Te_haces">
+            <input id="Te_haces" type="checkbox" value="Te_haces" name="ahi_lo_tenes"> Te haces
+          </label>
+          <label for="matando">
+            <input id="matando" type="checkbox" value="matando" name="ahi_lo_tenes"> Hay que cagarte matando
+          </label>
+          <!-- Elemento div, es una división. Agrupamos contenido en una sección para luego darle un formato -->
+        </form>
+      <!-- </div> -->
+
+    </main>
+    <!-- footer, pie de página debe estar despues del main -->
+    <footer>
+      <p><small>se puede agregar un texto breve de pies de página</small></p>
+    </footer>
+
+  </body>
+</html>
