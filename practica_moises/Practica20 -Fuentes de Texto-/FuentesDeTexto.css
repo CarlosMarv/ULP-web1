@@ -1,0 +1,36 @@
+/*
+    Fuentes de Texto en CSS
+
+    font-family: 'Pacifico', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Pangolin', cursive;
+*/
+
+h1{
+    text-align: center;
+}
+
+section{
+    display: flex;
+}
+
+h2{
+    padding: 20px;
+}
+
+.s1{
+    font-family: 'Pacifico', cursive;
+}
+
+.s2{
+   font-family: 'Indie Flower', cursive; 
+}
+
+.s3{
+    font-family: 'Amatic SC', cursive;    
+}
+
+.s4{
+    font-family: 'Pangolin', cursive;
+}

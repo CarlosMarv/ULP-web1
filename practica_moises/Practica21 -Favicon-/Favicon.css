@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body{
+    background-color: rgba(139, 227, 227, 0.77);
+}
+
+#imagenCabecera{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+/*
+    MENÚ HORIZONTAL 1
+*/
+/* Estilo de la barra de navegación */
+.menuH1 {
+    overflow: hidden;
+    background-color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Estilo de los enlaces */
+.menuH1 a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambio de color al poner encima con el ratón */
+.menuH1 a:hover {
+    background-color: rgba(35, 216, 216, 0.76);
+    color: black;
+}

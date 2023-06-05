@@ -1,0 +1,36 @@
+/**
+    Listas en HTML
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+section{
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+.lista1{
+    background-color: burlywood;
+    outline-style: dashed;
+}
+
+.sublista1a{
+    list-style-type: upper-alpha;
+}
+
+.sublista1b{
+    list-style-type: upper-roman;
+}
+
+.lista2{
+    background-color: cadetblue;
+    outline-style: dashed;
+}
+
+.lista3{
+    background-color: chocolate;
+    outline-style: dashed;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <!-- 
+Crear un formulario que permita cargar reseñas de películas con los siguientes datos:
+Película (obligatorio, máximo 30 caracteres)
+Puntuación (obligatorio, solo se puede puntuar con 1, 2, 3, 4 o 5)
+Comentario (opcional, pero si la escribe el mínimo es 10 caracteres y el máximo es 200 caracteres)
+Dar estilo particular al formulario.
+Validar campos usando javascript.
+Mostrar errores de validación manipulando el DOM.
+Cambiar estilo a campos con errores de validación.
+Al enviar, si los datos está bien hacer lo siguiente:
+Mostrar los datos ingresados con el formato que desee. Cada reseña debe distinguirse.
+Limpiar el formulario.
+Hacer foco en el input de la película. -->
+    <form onsubmit="return validar()" id="f_peliculas">
+      <label for="f_pelicula">Pelicula</label>
+      <input id="f_pelicula" autofocus />
+      <label >Debe ingresar un nombre de película. Máximo 30 caract.</label>
+      <label for="f_puntuacion">Puntuación</label>
+      <input id="f_puntuacion"/>
+      <label for="f_comentario">Mensaje</label>
+      <textarea id="f_comentario" rows="3"></textarea>
+
+      
+      <button type="submit">Enviar</button>
+      <div id="errores">
+        <p>aca van los errores?</p>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+/* 
+    PSEUDOCLASES.CSS
+*/
+
+*{
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+*::selection{
+    background: red;
+}
+
+main{
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #008300,white);
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#titulo2{
+    color: white;
+    text-transform: lowercase;
+}
+
+#titulo2::before,#titulo2::after{
+    content:"''";
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+article{
+    margin-top: 50px;
+    font-size: 1.5em;
+    text-align: justify;
+    column-count: 3;
+    column-gap: 2em;
+    column-rule: 3px solid brown;
+}
+
+p::first-letter{
+    font-size: 3em;
+    color: brown;
+}
+
+p::first-line{
+    color: green;
+}

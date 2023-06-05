@@ -1,0 +1,51 @@
+/*
+Práctica5.CSS
+Aquí podrás visualizar las reglas de CSS de nuestra práctica5.html llamada "Cajas flotantes" yeah!
+*/
+
+body{
+    color:white;
+}
+
+h1{
+    color:black;
+    text-align: center;
+}
+
+div{  
+    width: 200px;
+    height: 100px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 40px;
+}
+
+#cajaNegra{
+    background-color: black;
+    /*float: left;*/
+    clear: both;
+    width: 100%;
+}
+
+#cajaAzul{
+    background-color: blue;
+    float: right;
+}
+
+#cajaVerde{
+    background-color: green;
+    float: left;
+}
+
+#cajaRoja{
+    background-color: red;
+    /*float: right;*/
+    clear:both;
+    width: 100%;
+}
+
+
+
+
+
+

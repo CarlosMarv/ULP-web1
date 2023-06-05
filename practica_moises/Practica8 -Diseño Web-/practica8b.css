@@ -1,0 +1,64 @@
+/*
+   Hoja de Estilos PRACTICA8b.CSS
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    border-style: solid;
+    font-family: 
+}
+
+h1,h2,h3,footer{
+    text-align: center;
+}
+
+header, footer{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+
+article{
+    background-color: rgba(130, 163, 255, 0.42);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.col1{
+    border-left-style: solid;
+    border-top-style: solid;
+}
+
+.col2{
+    border-right-style: solid;
+    border-top-style: solid;
+    border-left-style: solid;
+}
+
+.col3{
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+}
+
+.col4{
+   border-style: solid; 
+}
+
+section{
+    background-color: #82a3ff;
+    float: left;
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    overflow: auto;
+}
+
+footer{
+    clear: both;
+}

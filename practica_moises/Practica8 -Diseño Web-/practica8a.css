@@ -1,0 +1,53 @@
+/*
+   Hoja de Estilos PRACTICA8a.CSS
+*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+h2, h3{
+    text-align: center;
+    padding: 20px;
+}
+
+p{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+header, article, footer{
+    border-style: solid;
+}
+
+header{
+    background-color: rgba(204, 158, 43, 0.99);
+    text-align: center;
+    padding: 20px;
+    border-bottom: none;
+}
+
+article{
+    background-color: antiquewhite;
+    overflow: scroll;
+    padding: 20px;
+}
+
+section{
+    width:50%;
+    height: 300px;
+    float: left;
+    overflow: scroll;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgba(204, 158, 43, 0.99);
+    text-align: center;
+    padding: 20px;
+    clear: both;
+    border-top: none;
+    font-weight: bolder;
+}

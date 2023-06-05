@@ -1,0 +1,25 @@
+/*
+    Sombras en CSS
+*/
+
+header,footer{
+    background-image: linear-gradient(to right, blue,white,green);
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: -5px 5px 5px black;
+    text-shadow: 2px 2px 4px blue;
+    color: white;
+}
+
+div{
+    border: 1px solid black;
+    margin: 100px;
+    background-color: blueviolet;
+    height: 150px;
+    box-shadow: -20px -20px 5px rgba(90, 8, 114, 0.95);
+}
+
+p{
+    padding: 5%;
+}

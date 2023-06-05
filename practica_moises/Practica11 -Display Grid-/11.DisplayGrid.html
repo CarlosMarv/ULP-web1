@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+
+    header,footer{
+        background-color: white;
+        border-style: solid;
+        border-radius: 20px;
+        padding: 5px;
+        text-align: center;
+    }       
+    body{
+        background-image: url(img/foto3.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: grey;
+    }
+    .grid{
+      padding-top: 30px;
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      grid-gap: 10px;
+    }
+    .grid img{
+        width:100%;
+        margin: auto;
+        border: 3px solid white;
+        transition: all 0.5s ease;
+    }
+    .grid img:hover{
+        transform: scale(0.9);    
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Display Grid</h1>
+        <p>(La mejor forma de aprender HTML y CSS es practicando)</p>
+    </header>
+    
+    <div class="grid">
+        <img src="img/foto1.jpg" alt="imagen">
+        <img src="img/foto1.jpg" alt="imagen">
+        <img src="img/foto1.jpg" alt="imagen">
+        <img src="img/foto3.jpg" alt="imagen">
+        <img src="img/foto4.jpg" alt="imagen">
+        <img src="img/foto5.jpg" alt="imagen">
+        <img src="img/foto6.jpg" alt="imagen">
+        <img src="img/foto5.jpg" alt="imagen">
+        <img src="img/foto4.jpg" alt="imagen">
+        <img src="img/foto5.jpg" alt="imagen">
+        <img src="img/foto6.jpg" alt="imagen">
+        <img src="img/foto5.jpg" alt="imagen">
+    </div>
+    
+</body>
+</html>

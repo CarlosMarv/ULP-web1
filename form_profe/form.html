@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio Simulacro</title>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito:ital,wght@1,200&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="form.css">
+    <script defer src="form.js"></script>
+  </head>
+<!--
+    Crear un formulario con:
+        Nombre (obligatorio)
+        Mensaje (obligatorio, máximo 200 caracteres)
+        Email (opcional, pero válido si lo ingresa)
+    Dar estilo particular al formulario
+    Validar campos
+    Mostrar lista con errores creando elementos del DOM
+    Cambiar estilo a campos con errores
+    Al enviar, si los datos está bien, agregar mensaje a una lista de mensajes, con el siguiente formato:
+    Si proveyó el email,
+    “<nombre> dice <mensaje>. Contacto: <email>.”
+    Si no,
+    “<nombre> dice <mensaje>.”
+    Limpiar los campos, errores de validación y cambios de estilo
+    Hacer foco en el primer input al iniciar el documento y luego de cada envío correcto
+-->
+  <body>
+    <h1>Ejercicio Simulacro</h1>
+    <form onsubmit="return validar()" id="f_contacto">
+      <label for="f_nombre">Nombre</label>
+      <input id="f_nombre" autofocus />
+      <label for="f_mensaje">Mensaje</label>
+      <textarea id="f_mensaje" rows="3"></textarea>
+      <label for="f_email">Email</label>
+      <input id="f_email" />
+      <button type="submit">Enviar</button>
+      <div id="errores">
+        <p>efhwuef</p>
+      </div>
+    </form>
+    <div id="mensajes">
+      <p>gwrgw
+        <p>fwefe</p>
+      </p>
+    </div>
+  </body>
+</html>
