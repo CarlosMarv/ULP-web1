@@ -1,15 +1,45 @@
-
 body {
     font-family: Roboto;
-    background-color: lemonchiffon;
-   }
-   form{
+    background-color: rgba(159, 240, 213, 0.555);
+}
+
+form {
+    font-size: 1.3em;
+    background-color: rgba(125, 177, 220, 0.735);
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 30px;
     margin: 10px;
-    border: 5px solid blue;
+    border: 5px solid rgb(12, 0, 250);
     border-radius: 15px;
-    border-style: dashed;
-   }
+}
+
+textarea {
+    border: 1px solid black;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.error{
+    background-color: rgba(255, 213, 151, 0.87);
+    color: red;
+}
+
+.error-activo {
+    color: red;
+    display: initial;
+}
+
+.error-inactivo {
+    display: none;
+}
+
+.btn {
+    height: 35px;
+    width: 80px;
+    background: linear-gradient(90deg, #E70B25 0%, #900314 100%);
+    margin: auto;
+    color: #fdfdfd;
+    border-radius: 25px;
+}

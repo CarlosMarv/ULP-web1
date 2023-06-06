@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="formulario.css">
+    <script defer src="formulario.js" ></script>
     <title>Formulario</title>
   </head>
   <body>
@@ -20,20 +22,24 @@ Al enviar, si los datos está bien hacer lo siguiente:
 Mostrar los datos ingresados con el formato que desee. Cada reseña debe distinguirse.
 Limpiar el formulario.
 Hacer foco en el input de la película. -->
+<h3>Haga sus comentarios sobre las películas</h3>
     <form onsubmit="return validar()" id="f_peliculas">
       <label for="f_pelicula">Pelicula</label>
-      <input id="f_pelicula" autofocus />
-      <label >Debe ingresar un nombre de película. Máximo 30 caract.</label>
+      <input id="f_pelicula"/>
+      <p id="msj-pelicula" class="error-inactivo">Debe ingresar un nombre de película. Máximo 30 caract.</p>
       <label for="f_puntuacion">Puntuación</label>
       <input id="f_puntuacion"/>
+      <p id="msj-puntuacion" class="error-inactivo">Debe ingresar una puntuacion entre 1 y 5.</p>
       <label for="f_comentario">Mensaje</label>
       <textarea id="f_comentario" rows="3"></textarea>
+      <p id="msj-comentario" class="error-inactivo">Debe ingresar un comentario entre 10 y 200 caracteres</p>
 
       
-      <button type="submit">Enviar</button>
-      <div id="errores">
-        <p>aca van los errores?</p>
-      </div>
+      <button class="btn"type="submit">Enviar</button>
+
     </form>
+    <div id="comentarios-ok">
+      <p></p>
+    </div>
   </body>
 </html>

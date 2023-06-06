@@ -1,8 +1,8 @@
-
 body {
     font-family: Roboto;
-   }
-   form{
+}
+
+form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -11,25 +11,28 @@ body {
     border: 5px solid blue;
     border-radius: 15px;
     border-style: dashed;
-   }
-   textarea {
+}
+
+textarea {
     border: 1px solid black;
     border-radius: 0px 15px 0px 15px;
-   }
-   #errores {
+}
+
+#errores {
     border: 1px solid red;
     padding: 5px;
     display: none;
-   }
-   #errores p {
+}
+
+#errores p {
     color: red;
-   }
-   
-   .error {
+}
+
+.error {
     border: 1px solid red;
-   }
+}
 
-   p {
+p {
 
-    color:red;
-   }
+    color: red;
+}
